@@ -1,0 +1,12 @@
+# uncompyle6 version 3.2.0
+# Python bytecode 2.4 (62061)
+# Decompiled from: Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:19:30) [MSC v.1500 32 bit (Intel)]
+# Embedded file name: pirates.teleport.JailTeleportActorOV
+from pirates.teleport.DistributedTeleportActorOV import DistributedTeleportActorOV
+
+class JailTeleportActorOV(DistributedTeleportActorOV):
+    __module__ = __name__
+
+    @report(types=['args'], dConfigParam=['dteleport'])
+    def __init__(self, cr, doEffect=True):
+        DistributedTeleportActorOV.__init__(self, cr, 'JailTeleportActorOV', doEffect=doEffect)
